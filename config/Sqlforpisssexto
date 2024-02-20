@@ -1,0 +1,34 @@
+INSERT INTO rol (nombre, estado, external_id, createdAt, updatedAt) VALUES
+('admin', 1, '1638ae03-38c1-11ee-95f7-02420965aea4', '2023-08-12 03:58:56', '2023-08-12 03:58:56'),
+('apiuser', 1, '16392e3e-38c1-11ee-95f7-02420965aea4', '2023-08-12 03:58:56', '2023-08-12 03:58:56');
+
+INSERT INTO persona (nombres, apellidos, external_id,cargo, institucion, estado, createdAt, updatedAt) VALUES
+('José', 'Guaman',  '163c8e31-38c1-11ee-95f7-02420965aea4', 'Estudiante', 'UNL', 1,'2023-08-12 03:58:56', '2023-08-12 03:58:56'),
+('Patricio', 'Betancourt', '163d1e69-38c1-11ee-95f7-02420965aea4', 'Estudiante', 'UNL', 1,'2023-08-12 03:58:56', '2023-08-12 03:58:56'),
+('Joan', 'Riofrio', '163dd772-38c1-11ee-95f7-02420965aea4', 'Estudiante', 'C4DE', 1,'2023-08-12 03:58:56', '2023-08-12 03:58:56'),
+('Diego', 'Riofrio', '163e391d-38c1-11ee-95f7-02420965aea4', 'Estudiante', 'Universidad de ..',1, '2023-08-12 03:58:56', '2023-08-12 03:58:56'),
+('Yovin', 'Urrego', '163f50f4-38c1-11ee-95f7-02420965aea4', 'Estudiante', 'EScuaela', 1,'2023-08-12 03:58:56', '2023-08-12 03:58:56'),
+('Mario', 'Cueva', '163fbaa0-38c1-11ee-95f7-02420965aea4', 'Estudiante', 'Datos', 1,'2023-08-12 03:58:56', '2023-08-12 03:58:56');
+
+INSERT INTO cuenta (correo, clave, external_id, estado, createdAt, updatedAt, id_persona)
+VALUES
+('joeg@unl.edu.ec', '$2a$08$G6Aet5sSTO0plj5K1gXIDuOMo8f96mzalGpxismqRwFReINpVSFea', '16407b70-38c1-11ee-95f7-02420965aea4', '0', '2023-08-12 03:58:56', '2023-08-12 03:58:56', 1),
+('patoBetan@unl.edu.ec', '$2a$08$C7HIobaVYPP2/1yn/kCgCO2NvGmqigLQGpdTa6wOwEXardqM8NQ3y', '1640e105-38c1-11ee-95f7-02420965aea4', '0', '2023-08-12 03:58:56', '2023-08-12 03:58:56', 2),
+('joanriob@unl.edu.ec', '$2a$08$IdIGbRnR.mc8T1PrijQCU.gqE2lhmdR6eOvJ0NdLZo4te/apyoy6S', '164152d6-38c1-11ee-95f7-02420965aea4', '0', '2023-08-12 03:58:56', '2023-08-12 03:58:56', 3),
+('Diegorp@unl.edu.ec', '$2a$08$6wpsVuS1KlJot2V2s8rkieuedHEOpavJQ0iARQ2BC1fL1WB4ovYTS', '1641c5ba-38c1-11ee-95f7-02420965aea4', '0', '2023-08-12 03:58:56', '2023-08-12 03:58:56', 4),
+('yovur@unl.edu.ec', '$2a$08$poW4vo8VrPrunIGBb9Mi3upkDIdTbHHaQaD2E4yO9nm2RqN7LkOA6', '164258c1-38c1-11ee-95f7-02420965aea4', '0', '2023-08-12 03:58:56', '2023-08-12 03:58:56', 5),
+('marioC@unl.edu.ec', '$2a$08$TkKVaJPiIesUc2Y7k/H2U.H5WX8oOlvEc7cN0ILZt4Km8iha63axq', '1642c9c2-38c1-11ee-95f7-02420965aea4', '1', '2023-08-12 03:58:56', '2023-08-12 03:58:56', 6);
+
+INSERT INTO peticion (peticion, external_id, estado, createdAt, updatedAt, id_cuenta)
+VALUES ('Solicitar acceso al sistema de información', UUID(), 'ES', '2023-08-12 03:58:56', '2023-08-12 03:58:56', 1),
+('Solicitar acceso al sistema de información', UUID(), 'ES', '2023-08-12 03:58:56', '2023-08-12 03:58:56', 2),
+('Solicitar acceso al sistema de información', UUID(), 'ES', '2023-08-12 03:58:56', '2023-08-12 03:58:56', 3),
+('Solicitar acceso al sistema de información', UUID(), 'ES', '2023-08-12 03:58:56', '2023-08-12 03:58:56', 4),
+('Solicitar acceso al sistema de información', UUID(), 'ES', '2023-08-12 03:58:56', '2023-08-12 03:58:56', 5),
+('Solicitar acceso al sistema de información', UUID(), 'AC', '2023-08-12 03:58:56', '2023-08-12 03:58:56', 6);
+
+
+
+
+
+
